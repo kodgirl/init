@@ -1,1 +1,1 @@
-
+host $(ipconfig getpacket en0 | grep yiaddr | awk '{print $3}')
