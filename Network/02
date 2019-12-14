@@ -1,2 +1,2 @@
 ifconfig | grep "broadcast" | awk '{print $2}'
-ipcalc $(ifconfig | grep "broadcast" | awk '{print $6}') | awk '{print $4}' | grep "HostM" | awk '{print $1 $2}'
+ipcalc 192.168.21.86 | grep "HostM" | awk '{print $1 $2}'
